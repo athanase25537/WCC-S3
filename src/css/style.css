@@ -137,6 +137,7 @@ section#about{
     position: relative;
     background-color: #00334A;
     justify-content: space-between;
+    overflow: hidden;
 }
 section#competences{
     justify-content: center;
@@ -242,7 +243,6 @@ section#services .item{
 }
 
 section#experience{
-    border: 1px solid white;
     gap: 10px;
 }
 
@@ -262,7 +262,6 @@ section#experience .description{
 .cards{
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
     flex-wrap: wrap;
     width: 100%;
     height: 300px;
@@ -274,7 +273,6 @@ section#experience .description{
     background-color : var(--third);
     margin : 3px 0px;
     padding : 20px 15px;
-    border: 1px solid red;
     display : flex;
     flex-direction : column;
     box-shadow : 0 5px 20px rgba(0,0,0,0.5);
