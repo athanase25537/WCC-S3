@@ -37,3 +37,18 @@ const textLoad = () => {
 
 textLoad();
 setInterval(textLoad, 12000);
+
+
+if(window.innerWidth <= 630){
+    document.querySelector('header').classList.remove('hidden');
+    document.querySelector('header').classList.remove('show');
+}
+
+//Menu burger
+const menu = document.querySelector('.menu');
+menu.classList.remove('show');
+const header = document.querySelector('header');
+menu.addEventListener('click', () => {
+    header.classList.toggle('show');
+    menu.classList.toggle('show');
+})
