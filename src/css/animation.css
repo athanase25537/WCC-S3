@@ -1,0 +1,25 @@
+.text{
+    position: relative;
+}
+
+.text.sec-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main);
+    border-left: 2px solid white;
+    animation: animate 4s infinite;
+}
+
+@keyframes animate {
+    40%, 60%{
+        left: calc(100% + 5px);
+    }
+
+    100%{
+        left: 0;
+    }
+}

@@ -84,6 +84,24 @@ section#main{
     position: relative;
 }
 
+section#main h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+
+section#main h1 .first-text{
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+section#main h1 .sec-text{
+    font-weight: 700;
+    font-size: 2.3em;
+    padding: 0;
+}
+
 section#main .img{
     background-image: url(../img/1.png);
     background-repeat: no-repeat;
@@ -95,14 +113,12 @@ section#main svg{
     width: 100%;
 }
 
-section .text{
-    width: 40%;
-    /* border: 1px solid yellow; */
-    /* height: 100%; */
+section .article{
+    width: 45%;
 }
 
 section#main .img{
-    width: 60%;
+    width: 50%;
     height: 100vh;
 }
 
@@ -169,7 +185,15 @@ section#experience > h1{
     stroke: #8b979c;
     stroke-dashoffset: 0;
 }
-.svg circle:nth-child(2){
+
+.box h1{
+    color: var(--main);
+    margin-top: 20%;
+}
+.box.hidden{
+    transform: translate(0, 0);
+}
+.box.show .svg circle:nth-child(2){
     animation: circle 2s forwards;
 }
 
@@ -208,6 +232,11 @@ section#services .item{
     gap: 13px;
     background-color: var(--main);
     box-shadow: rgb(10, 2, 2) 0px 5px 15px;
+}
+
+section#experience{
+    border: 1px solid white;
+    gap: 20px;
 }
 
 section#experience .description{
