@@ -7,5 +7,5 @@
 -#CEDDDE;
 
 Couleur qui marque la purete,
-ces couleurs ce rejoit tres bien
-#lien:
+ces couleurs ce rejoit tres bien;
+#lien: wcc-s3-portfolio.netlify.app
