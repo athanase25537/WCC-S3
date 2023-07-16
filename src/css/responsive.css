@@ -1,0 +1,37 @@
+@media screen and (max-width: 800px) {
+    body{
+    }
+
+    section#main{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    section#main .article, section#main .img{
+        width: 100%;
+        height: auto;
+    }
+
+    section#about .article,
+    section#about .img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 630px) {
+    header{
+        /* background-color: red; */
+    }
+
+    header ul{
+        
+    }
+}
+@media screen and (max-width: 500px){
+    section#services .item{
+        width: 100%;
+    }
+
+    section#competences .box{
+        /* width: 45%; */
+    }
+}

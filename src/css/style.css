@@ -55,7 +55,7 @@ header ul li{
 header ul li a{
     position: relative;
     color: var(--fourth);
-    font-size: 20px;
+    font-size: 1em;
     letter-spacing: .5px;
 }
 
@@ -109,7 +109,6 @@ section#main h1 .sec-text{
 }
 
 section#main .img{
-    background-image: url(../img/1.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -144,7 +143,6 @@ section#competences{
     align-items: center;
     gap: 2%;
     flex-wrap: wrap;
-    /* background-color: var(--main); */
 }
 
 section#competences > h1,
@@ -160,30 +158,34 @@ section#experience > h1{
 
 .box{
     background-color: #fff;
-    width: 200px;
-    height: 300px;
+    width: 20%;
+    min-width: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .pourcent{
     position: relative;
+    width: 100%;
+    height: 100%;
 }
+
 
 
 .svg{
     display: block;
-    height: 150px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
 }
 .svg circle{
     fill: none;
     stroke: var(--main);
-    stroke-width: 10px;
-    transform: translate(5px, 5px);
+    stroke-width: 5px;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
@@ -196,7 +198,6 @@ section#experience > h1{
 
 .box h1{
     color: var(--main);
-    margin-top: 20%;
 }
 .box.hidden{
     transform: translate(0, 0);
@@ -223,20 +224,21 @@ section#experience > h1{
 
 section#services{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 1%;
     padding: 2%;
 }
 
 section#services .item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 200px;
+    justify-content: space-around;
+    width: 30%;
+    min-width: 150px;
     height: auto;
     border-radius: 5px;
     padding: 2%;
+    margin-bottom: 2%;
     gap: 13px;
     background-color: var(--main);
     box-shadow: rgb(10, 2, 2) 0px 5px 15px;
